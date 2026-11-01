@@ -1,0 +1,17 @@
+{
+  "name": "anagha-contact",
+  "compatibility_date": "2025-10-06",
+  "main": "worker/index.ts",
+  "vars": {
+    "FROM_EMAIL": "Contact@anaghasoft.ai"
+  },
+  "env": {
+    "production": {
+      "vars": {
+        "FROM_EMAIL": "Contact@anaghasoft.ai"
+      }
+    }
+  }
+}
+
+

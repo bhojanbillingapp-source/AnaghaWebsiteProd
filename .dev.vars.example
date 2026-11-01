@@ -1,0 +1,22 @@
+# Example environment variables for local Cloudflare Worker development
+# Copy this to .dev.vars and fill in your actual values
+
+# REQUIRED: Resend API Key (get from https://resend.com/api-keys)
+RESEND_API_KEY=re_your_api_key_here
+
+# REQUIRED: Recipient email addresses (comma-separated for multiple emails)
+RECIPIENT_EMAILS=contact@anaghasoft.ai,support@anaghasoft.ai
+
+# REQUIRED: Sender email (must be verified in Resend)
+FROM_EMAIL=Contact@anaghasoft.ai
+
+# OPTIONAL: Cloudflare Turnstile secret for CAPTCHA verification
+# Get from: https://dash.cloudflare.com > Turnstile > Create Site
+TURNSTILE_SECRET_KEY=your_turnstile_secret_here
+
+# OPTIONAL: Admin panel credentials
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=your_secure_password_here
+
+# NOTE: Do NOT commit .dev.vars to git
+# Use 'wrangler secret put' instead to set secrets in production
